@@ -1,6 +1,6 @@
-$(function () {
-  var entries = $(".entries");
-  var history = $('.history');
+$(() => {
+  let entries = $(".entries");
+  let history = $('.history');
 
   $('.num-btn').on('click', function () {
     entries.append(entries.val() + $(this).html());
@@ -35,9 +35,9 @@ $(function () {
   });
 });
 
-function previous(str) {
+let previous = (str) => {
   let arr = str.split('');
-  for (var i = arr.length - 1; i > 0; i--) {
+  for (let i = arr.length - 1; i > 0; i--) {
     let res = arr[i].match(/[+\-*\/]/g);
     if (res) {
       arr.pop();
@@ -47,4 +47,4 @@ function previous(str) {
   }
   let newStr = arr.join('');
   return newStr;
-}
+};

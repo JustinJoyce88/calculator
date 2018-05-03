@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,700');
+
 * {
   margin: 0;
   padding: 0;
@@ -33,12 +34,14 @@ button {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  box-shadow: 0 6px #3d5aa8;
+  -webkit-box-shadow: 0 6px #3d5aa8;
+          box-shadow: 0 6px #3d5aa8;
   margin-bottom: 1em;
 }
 
 button:active {
-  box-shadow: 0 0 #3d5aa8;
+  -webkit-box-shadow: 0 0 #3d5aa8;
+          box-shadow: 0 0 #3d5aa8;
   top: 4px;
 }
 
@@ -50,7 +53,9 @@ header {
 
 .container {
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #c6d0ea;
   margin: 0 auto;
   width: 375px;
@@ -59,7 +64,6 @@ header {
   overflow: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.6);
 }
 
@@ -72,7 +76,6 @@ header {
   margin: 0 auto;
   margin-bottom: 1em;
   -webkit-box-shadow: inset 0px 5px 3px 0px rgba(161, 170, 176, 1);
-  -moz-box-shadow: inset 0px 5px 3px 0px rgba(161, 170, 176, 1);
   box-shadow: inset 0px 5px 3px 0px rgba(161, 170, 176, 1);
 }
 

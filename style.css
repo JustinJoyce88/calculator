@@ -19,6 +19,7 @@ body {
   line-height: 150%;
   background-attachment: fixed;
   background-color: #2d3436;
+  padding-top: 2em;
 }
 
 button {
@@ -53,14 +54,12 @@ header {
 
 .container {
   text-align: center;
-  -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #c6d0ea;
   margin: 0 auto;
   width: 375px;
   height: 400px;
-  margin-top: 2em;
   overflow: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.6);
@@ -101,7 +100,8 @@ header {
 }
 
 .sig {
-  margin: 1em;
+  padding: 1em;
   text-align: center;
   color: white;
+  font-size: .8em;
 }
